@@ -4,8 +4,11 @@ const expressGraphQL = require('express-graphql');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const schema = require('./schema/schema');
+const cors = require('cors');
+
 
 const app = express();
+app.use(cors());
 
 // Replace with your mongoLab URI
 const MONGO_URI =

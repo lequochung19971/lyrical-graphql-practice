@@ -1,5 +1,5 @@
-const app = require('./server/server');
+const app = require('./server');
 
-app.listen(4000, () => {
+app.listen(3001, () => {
   console.log('Listening');
 });
